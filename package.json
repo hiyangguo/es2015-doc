@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/hiyangguo/es2015-doc#readme",
   "devDependencies": {
+    "colors": "^1.1.2",
     "promise": "^7.1.1"
   }
 }

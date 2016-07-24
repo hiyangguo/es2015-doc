@@ -3,8 +3,9 @@
  * Created by yangguo on 2016/7/23 0023.
  */
 let fs = require("fs");
-let child_process = require('child_process');
 var Promise = require('promise');
+let child_process = require('child_process');
+var colors = require('colors');
 
 /**
  * 原文件目录
@@ -56,14 +57,14 @@ fs.readdir(srcDir, (err, files)=> {
                 if (error) {
                     return console.log(error);
                 }
-                
+
                 let mdName = filName.split(/\.js$/).join('.md');
 
                 fs.writeFile(outPutDir + mdName, data, (err)=> {
                     if (err) {
                         return console.error(err);
                     }
-                    console.log(mdName + ' 成功!');
+                    console.log(mdName + ' 成功!'.green);
                     if (i === files.length - 1) {
                         resolve(200);
                     }
@@ -71,6 +72,6 @@ fs.readdir(srcDir, (err, files)=> {
             });
         });
     }).then((code)=> {
-        console.log('完成(' + code + ')');
+        console.log(('完成(' + code + ')').green);
     });
 });
