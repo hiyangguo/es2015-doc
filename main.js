@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /**
  * Created by yangguo on 2016/7/23 0023.
  */
@@ -59,6 +60,8 @@ fs.readdir(srcDir, (err, files)=> {
                 }
 
                 let mdName = filName.split(/\.js$/).join('.md');
+
+                data = `[TOC]\r\r` + data;
 
                 fs.writeFile(outPutDir + mdName, data, (err)=> {
                     if (err) {
