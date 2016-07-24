@@ -1,0 +1,25 @@
+{
+  "name": "es2015-doc",
+  "version": "1.0.0",
+  "description": "Introduce grammar of ES2015.In finaly it will generate a gitbook.",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiyangguo/es2015-doc.git"
+  },
+  "keywords": [
+    "es2015-doc"
+  ],
+  "author": "Godefery Young",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiyangguo/es2015-doc/issues"
+  },
+  "homepage": "https://github.com/hiyangguo/es2015-doc#readme",
+  "devDependencies": {
+    "promise": "^7.1.1"
+  }
+}

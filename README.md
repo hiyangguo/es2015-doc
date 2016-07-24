@@ -1,2 +1,8 @@
 # es2015-doc
-Introduce grammar of ES2015.In finaly it will generate a gitbook.
+
+> 这个项目主要是介绍es2015的语法，最终将生成一本gitbook.
+
+## 生成gitbook
+```shell
+node main.js
+```
